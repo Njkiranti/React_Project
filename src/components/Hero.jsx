@@ -6,7 +6,7 @@ const Hero = () => {
     <section
       className="h-screen bg-center text-white flex items-center justify-center animate-fadeIn "
       style={{
-        backgroundImage: 'url("/src/Image/NIra & Co.png")',
+        backgroundImage: 'url("/Image/NIra & Co.png")',
         backgroundSize: 'contain', // Prevent stretching and zooming
         backgroundRepeat: 'no-repeat', // Ensure image is not repeated
       }}
