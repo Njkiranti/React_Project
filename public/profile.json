@@ -1,14 +1,13 @@
 [
   {
     "title": "Profile Optimization",
-    "image": "/src/Image/Portfolio/profile.png",
-
-    "link": ""
+    "image": "/Image/profile.png",
+    "link": "https://www.canva.com/design/DAGM9Dqt2F8/4i_d3Lq4EWrmJ4LhMq550Q/edit?ui=eyJEIjp7IkYiOjF9fQ"
   },
     {
       "title": "Feed Optimization",
-      "image": "/src/Image/Portfolio/optimization.png",
-      "link": ""
+      "image": "/Image/optimization.png",
+      "link": "https://www.canva.com/design/DAGM9Dqt2F8/4i_d3Lq4EWrmJ4LhMq550Q/edit?ui=eyJEIjp7IkYiOjF9fQ"
     }
     
   ]

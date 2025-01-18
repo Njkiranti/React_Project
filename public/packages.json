@@ -3,13 +3,13 @@
       "title": " Package",
       "details": "Includes multiple pages, SEO optimization, and mobile responsiveness.",
       "price": "",
-      "image": "/src/Image/Package/package.png"
+      "image": "/Image/package.png"
     },
     {
       "title": "Package Information",
       "details": "Includes a custom design, SEO, app integration, and ongoing support.",
       "price": "",
-      "image": "/src/Image/Package/packageinfo.png"
+      "image": "/Image/packageinfo.png"
     }
   ]
   

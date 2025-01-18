@@ -33,7 +33,7 @@ const ProjectSection = ({ title, data, loading, error }) => {
                   {project.title}
                 </h3>
                 <a
-                  href="https://www.canva.com/design/DAGM9Dqt2F8/4i_d3Lq4EWrmJ4LhMq550Q/edit?ui=eyJEIjp7IkYiOjF9fQ"
+                  href={project.image}
                   target="_blank"
                   className="text-blue-500 hover:underline text-sm sm:text-base"
                 >
