@@ -24,7 +24,7 @@ const ProjectSection = ({ title, data, loading, error }) => {
               className="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105"
             >
               <img
-                src={project.image}
+                src={`${process.env.PUBLIC_URL}${project.image}`}
                 alt={project.title}
                 className="w-full h-61 object-cover rounded-t-xl"
               />
