@@ -2,12 +2,12 @@
     {
       "title": "Service",
       "description": "Building responsive and modern websites.",
-      "image": "/src/Image/Service/service.png"
+      "image": "/Image/service.png"
     },
     {
       "title": "Service Info",
       "description": "Creating feature-rich mobile apps for iOS and Android.",
-      "image": "/src/Image/Service/serviceinfo.png"
+      "image": "/Image/serviceinfo.png"
     }
   ]
   
