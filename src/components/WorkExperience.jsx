@@ -1,37 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Experience = () => {
-  const experiences = [
-    {
-      title: "Social Media Manager",
-      company: "Freelancer",
-      duration: "Jan 2021 - Present",
-      description:
-        "Developed full-stack applications using React, Node.js, and MongoDB. Led a team of 5 developers to deliver scalable solutions.",
-    },
-    {
-      title: "Sales & Marketing Manager",
-      company: "Ezone International Pvt Ltd",
-      duration: "Jun 2019 - Dec 2020",
-      description:
-        "Worked on front-end and back-end technologies including JavaScript, HTML, CSS, and SQL. Improved website performance by 30%.",
-    },
-    {
-      title: "Sales & Marketing Executive ",
-      company: "Ezone International Pvt Ltd",
-      duration: "Jun 2019 - Dec 2020",
-      description:
-        "Worked on front-end and back-end technologies including JavaScript, HTML, CSS, and SQL. Improved website performance by 30%.",
-    },
-    // {
-    //   title: "Intern -  ",
-    //   company: "Ezone International Pvt Ltd",
-    //   duration: "Jan 2018 - May 2019",
-    //   description:
-    //     "Collaborated with senior developers to create small web applications and learned modern software development practices.",
-    // },
-  ];
+  const [experiences, setExperience] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/experience.json");
+        if (!response.ok) {
+          throw new Error("Failed to load experience");
+        }
+        const data = await response.json();
+        setExperience(data.experiences); // Update to access the experiences array directly
+        setLoading(false);
+      } catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+
+  
+  if (loading) {
+    return <p className="text-center">Loading experience...</p>;
+  }
+
+  if (error) {
+    return <p className="text-center text-red-500">Error: {error}</p>;
+  }
   return (
     <section id="experience" className="bg-gray-100 py-20">
       <div className="container mx-auto text-center px-4 animate-fadeIn">
@@ -48,7 +47,7 @@ const Experience = () => {
                 <p className="text-gray-500 text-sm">{experience.duration}</p>
               </div>
               <div className="md:w-2/3">
-                <p className="text-gray-700">{experience.description}</p>
+                <p className="text-gray-700 text-justify">{experience.description}</p>
               </div>
             </div>
           ))}

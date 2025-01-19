@@ -1,0 +1,23 @@
+{
+    "experiences": [
+      {
+        "title": "Social Media Manager",
+        "company": "Freelancer",
+        "duration": "Jan 2022 - Present",
+        "description": "As a Social Media Manager, I crafted engaging content, managed online presence, and boosted brand awareness across social media platforms to drive audience engagement and growth."
+      },
+      {
+        "title": "Sales & Marketing Manager",
+        "company": "Ezone International Pvt Ltd",
+        "duration": "Dec 2022 - Nov 2023",
+        "description": "As a Sales & Marketing Manager, I led sales initiatives, developed marketing strategies, and built strong client relationships to drive revenue growth and enhance brand presence."
+      },
+      {
+        "title": "Sales & Marketing Executive",
+        "company": "Ezone International Pvt Ltd",
+        "duration": "Nov 2021 - Dec 2022",
+        "description": "As a Sales & Marketing Executive at Ezone International Pvt Ltd, I drove sales growth, managed client relationships, and executed marketing strategies to boost brand visibility and engagement."
+      }
+    ]
+  }
+  
